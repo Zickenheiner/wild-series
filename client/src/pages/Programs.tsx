@@ -16,7 +16,7 @@ export default function Programs() {
   }, []);
 
   return (
-    <div>
+    <div className="programs-container">
       <h1>Programs</h1>
       <div className="all-programs-container">
         {programs.map((program: ProgramType) => (

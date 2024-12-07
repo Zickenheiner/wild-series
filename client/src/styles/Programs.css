@@ -1,3 +1,7 @@
+.programs-container {
+  width: 100vw;
+}
+
 .all-programs-container {
   display: flex;
   flex-direction: column;

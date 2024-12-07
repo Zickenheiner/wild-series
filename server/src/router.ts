@@ -20,8 +20,16 @@ router.get("/", sayAction.sayWelcome);
 
 /* ************************************************************************* */
 
-import programActions from "./modules/programs/programs.action";
+import programActions from "./modules/programs/programsAction";
 
 router.get("/api/programs", programActions.browse);
+router.get("/api/programs/:id", programActions.read);
+
+/* ************************************************************************* */
+
+import categoryActions from "./modules/category/categoryAction";
+
+router.get("/api/categories", categoryActions.browse);
+router.get("/api/categories/:id", categoryActions.read);
 
 export default router;
